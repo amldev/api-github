@@ -15,9 +15,15 @@ npm install proyecto-1b-api-github
 ```
 const api = require('proyecto-1b-api-github');
 
-api.obtenerDatosDeUsuario('mugan86')
-    .then(
-        respuesta => console.log(respuesta)
-    ).
-    catch(error => console.log(error));
+api.obtenerDatosDeUsuario('mugan86').then(
+    data => {
+        console.log(data);
+        if (data.message === undefined) { // OK message
+            console.log('OK');
+            console.log(data.login);
+        } else {
+            console.log(data.message); // ERROR message
+        }
+    }
+);
 ```
