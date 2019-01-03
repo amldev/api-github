@@ -12,6 +12,6 @@ module.exports = {
         return axios.get(url).then(
             data => data.data
         ).
-        catch( error => console.log(error));
+        catch( error => error.response.data);
     }
 }
