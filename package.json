@@ -1,6 +1,6 @@
 {
-  "name": "proyecto-1b-api-github",
-  "version": "1.1.0",
+  "name": "@mugan86/api-github",
+  "version": "1.1.1",
   "description": "Acceso a la API de Github de un usuario",
   "main": "index.js",
   "scripts": {

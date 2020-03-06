@@ -1,4 +1,4 @@
-const obtenerUsuario = require('./../index').obtenerDatosDeUsuario;
+const user = require('./../index').user;
 
 const expect = require('chai').expect;
 
@@ -14,7 +14,7 @@ describe('Test de datos de diferentes usuarios de Github', () => {
             reply(403, error403);
     });
     it('Error 403 demasiadas request en un intervalo corto', () => {
-        return obtenerUsuario('mugan86').then(
+        return user('mugan86').then(
             respuesta => {
                 // Probar el tipo de variable que obtenemos de repsuesta. Tiene que ser un objeto.
                 expect(typeof respuesta).to.equal('object');
