@@ -1,7 +1,15 @@
 language: node_js
 node_js:
- - stable
+- stable
 install:
-  - npm install
+- npm install
 script:
-  - npm test
+- npm test
+deploy:
+  provider: npm
+  email: mugan86@gmail.com
+  api_key:
+    secure: rB6gKUGZHo5Q5NPehcYuqGfj95KWgagulx5avcwlubysVV3mijrHYnfAevi+TbHgqQsS0ltB211cSKYW2PeL0J6rJDNi7PsWYHxIlDfmFRJ93nggGSX6duFk9Lx55DZEBdnFD/GGuRKA8syVbsQeatu6niPZ0+uyN0yjYV8I9cwX3LrhsdDCFPwb6z9tk+Ok0ynBW5zZH3C/ycNr5h/dHJnDbguvsQziiNyHVsMLTAC8CFISu1EVSekXyTdXpQFGv2J6/ekO0vJwfOAB/+EV8NmvCjWT5ZbZ/VjUSvdHMZCRb2jQPpVEhKnwMngWKnvEpgyNr0fFHI6bTt055Zpc1d5+W8yqDSTyXaIvVvpvMzGeV30j5C/Gc6D9JkYC4nmYRbfr5AE1dBofb99GkCevpuGBZf/I5Xt90zLCTaMaY0eCBcO5vphJNAyay01UD/BSd5oBKcl9GiS1rtBmGDao/v5FTpEu6heFR0BtAHTQBppc/4Vdzp3/vC7vdlqN+8avmOIU7GHDBQjBRw2KBT2CsJtAnp2n/f05AFE9/cEfLYb2Xr7ky7ZLEg+EAcUS96qk4WPVZyPKiNXntwzcjWv4glq3b+Yx0HzvqUCc7ARUU6ZVEaK29LW5SPCloPmpUDqDS6ENlVMOp86WbdemQtflX6WyEcTf6HvvmqdMTFStv6U=
+  on:
+    tags: true
+    repo: amldev/api-github
