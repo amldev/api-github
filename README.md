@@ -1,5 +1,6 @@
 # API Github
 [![Build Status](https://travis-ci.org/amldev/api-github.svg?branch=master)](https://travis-ci.org/amldev/api-github)
+
 Obtener los datos de un usuario introducido por parámetro de la API de Github.
 
 ## Intrucciones de uso
