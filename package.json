@@ -4,7 +4,10 @@
   "description": "Acceso a la API de Github de un usuario",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "publish.patch": "git add . && git commit -m \"Update with patch\" && npm version patch && git push origin master",
+    "publish.minor": "git add . && git commit -m \"Update with minor\" && npm version minor && git push origin master",
+    "publish.major": "git add . && git commit -m \"Update with major\" && npm version major && git push origin major"
   },
   "repository": {
     "type": "git",
