@@ -8,13 +8,13 @@ Seguir las siguientes instrucciones.
 ### Instalación
 
 ```
-npm install @mugan86/api-github
+npm install api-github-am
 ```
 
 ### Uso
 
 ```
-const api = require('@mugan86/api-github');
+const api = require('api-github-am');
 
 api.user('mugan86').then(
     data => {
